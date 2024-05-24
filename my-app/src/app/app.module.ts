@@ -8,6 +8,12 @@ import { DataCompComponent } from './data-comp/data-comp.component';
 import { provideAnimationsAsync } from '@angular/platform-browser/animations/async';
 import {MatCardModule} from '@angular/material/card';
 import {MatToolbarModule} from '@angular/material/toolbar';
+import {MatSidenavModule} from '@angular/material/sidenav';
+import {MatButtonModule} from '@angular/material/button';
+import {MatDividerModule} from '@angular/material/divider';
+
+
+
 
 @NgModule({
   declarations: [
@@ -21,7 +27,10 @@ import {MatToolbarModule} from '@angular/material/toolbar';
     BrowserModule,
     FlexLayoutModule,
     MatCardModule,
-    MatToolbarModule
+    MatToolbarModule,
+    MatSidenavModule,
+    MatButtonModule,
+    MatDividerModule
 
   ],
   providers: [
