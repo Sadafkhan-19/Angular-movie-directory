@@ -1,6 +1,18 @@
-<div fxLayout="row" fxLayoutAlign="center center" fxFlex="100%" fxFill class="full-height" >
-    <h1>This is data</h1>
+<div fxLayout="column" fxLayoutAlign="center center" fxFlex="100%" fxFill class="full-height" >
+    <div fxLayout="column" fxLayoutGap="20">
+    <mat-card class="content-card" *ngFor="let names of movieNames">
+        <mat-card-content ><b>{{names.Title}}</b></mat-card-content>
     <ul>
-        <li *ngFor="let names of movieNames"><b>Title:</b> {{names.Title}} <b>Year:</b> {{names.Year}} <b>IMDb Rating:</b> {{names.imdbID}}</li>
+        
+            <div>
+            <b>Year:</b> {{names.Year}} 
+        </div> 
+            <div>
+                <b>IMDb Rating:</b> {{names.imdbID}}
+            </div>
+            
+
     </ul>
+</mat-card>
+</div>
 </div>
