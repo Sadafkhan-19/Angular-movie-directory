@@ -1,3 +1,6 @@
 <div fxLayout="row" fxLayoutAlign="center center" fxFlex="100%" fxFill class="full-height" >
-    <h1>This is data  </h1>
+    <h1>This is data</h1>
+    <ul>
+        <li *ngFor="let names of movieNames"><b>Title:</b> {{names.Title}} <b>Year:</b> {{names.Year}} <b>IMDb Rating:</b> {{names.imdbID}}</li>
+    </ul>
 </div>
